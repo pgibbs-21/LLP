@@ -1,6 +1,6 @@
 html {
   background-color: rgb(255, 255, 255);
-  --color-grey-100: rgb(235, 222, 222);
+  --color-grey-100: rgb(219, 207, 207);
   --color-grey-300: rgb(174, 159, 165);
   --color-red-200: rgb(113, 56, 68);
   --color-red-400: rgb(121, 42, 63);
@@ -24,7 +24,7 @@ header {
   height: auto;
   width: 100%;
   max-width: 6.5rem;
-  padding: 1rem
+  padding: 1rem;
 }
 
 #nav-bar ul {
@@ -113,7 +113,56 @@ header {
   background-color: rgb(34, 31, 31);
 }
 
+#footer-1 ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 3rem;
+  background-color: var(--color-grey-100);
+  margin: 0;
+}
+
+#footer-1 h2 {
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0 0 0.5rem 0;
+}
+
+#footer-1 p {
+  margin: 0;
+}
+
+#footer-2 {
+    background-color: black;
+}
+
+#footer-2 ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style:none;
+    margin: 0;
+}
+
+
+#footer-2 a{
+    text-decoration: none;
+    color: rgb(235, 228, 226);
+    font-size: .5rem;
+}
+
+#footer-2 p{
+    text-align: center;
+    color: rgb(235,228,226);
+    font-size: .5rem;
+}
+
 @media (max-width: 48rem) {
+  h2 {
+    font-size: 90%;
+  }
+  p{
+    font-size: 75%;
+  }
   #nav-bar nav {
     display: none;
   }
@@ -121,4 +170,24 @@ header {
   #nav-bar .nav-btn {
     display: flex;
   }
+ #footer-1 ul{
+    padding: 1rem;
+ }
+}
+
+@media (max-width: 30rem){
+    #footer-1 ul{
+        padding: 0;
+    }
+    #footer-1 li{
+        width: 80%;
+        text-align: center;
+    }
+    #footer-2 ul{
+        padding: 0;
+    }
+    #footer-2 li{
+        width: 60%;
+        text-align: center;
+    }
 }
